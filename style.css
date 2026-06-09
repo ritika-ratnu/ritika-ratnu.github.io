@@ -30,7 +30,6 @@ nav a {
 
 .about-section h1 {
   font-weight: normal;
-  margin-bottom: 6px;
 }
 .profile-photo {
   width: 200px;
@@ -44,7 +43,7 @@ nav a {
   max-width: 850px;
   margin: 30px auto;
   padding: 0 20px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
