@@ -24,28 +24,24 @@ nav a:hover {
   justify-content: center;
   gap: 24px;
   padding: 40px 20px;
+  font-size: 22px;
+  line-height: 2;
 }
 
 .profile-photo {
-  width: 160px;
-  height: 200px;
+  width: 200px;
+  height: 240px;
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
-}
-
-.about2-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  padding: 40px 20px;
 }
 
 .content-section {
   max-width: 850px;
   margin: 30px auto;
   padding: 0 20px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .content-section h2 {
@@ -54,3 +50,13 @@ nav a:hover {
   padding-bottom: 6px;
 }
 
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.education-item p {
+  margin-top: 0;
+}
