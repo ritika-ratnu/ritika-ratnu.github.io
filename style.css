@@ -25,7 +25,7 @@ nav a:hover {
   gap: 24px;
   padding: 40px 20px;
   font-size: 22px;
-  line-height: 2;
+  line-height: 1.6;
 }
 
 .profile-photo {
