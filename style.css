@@ -28,7 +28,7 @@ nav a:hover {
 
 .profile-photo {
   width: 120px;
-  height: 120px;
+  height: 160px;
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
@@ -37,3 +37,9 @@ nav a:hover {
 .about-info {
   max-width: 700px;
 }
+
+.about-info h1 {
+  font-weight: normal;
+  font-size: 28px;
+}
+
