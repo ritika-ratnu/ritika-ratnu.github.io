@@ -27,19 +27,30 @@ nav a:hover {
 }
 
 .profile-photo {
-  width: 120px;
-  height: 160px;
+  width: 160px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
 }
 
-.about-info {
-  max-width: 700px;
+.about2-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 20px;
 }
 
-.about-info h1 {
+.content-section {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.content-section h2 {
   font-weight: normal;
-  font-size: 28px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
 }
 
