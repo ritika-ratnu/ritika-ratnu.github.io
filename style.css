@@ -17,27 +17,21 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
 .about-section {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
   padding: 40px 20px;
 }
 
 .profile-photo {
-  width: 180px;
-  height: 180px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .about-info {
   max-width: 700px;
-}
-
-@media (max-width: 700px) {
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-  }
 }
