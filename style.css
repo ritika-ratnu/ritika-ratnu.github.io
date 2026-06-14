@@ -34,7 +34,7 @@ nav a {
   font-weight: normal;
 }
 .profile-photo {
-  width: 200px;
+  width: 180px;
   height: 280px;
   object-fit: cover;
   border-radius: 8px;
