@@ -1,115 +1,182 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<style>
-	  body {
-		margin: 0;
-	  }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	  .top-bar {
-		background-color: #f2f2f2;
-		height: 60px;
-		width: 100%;
-	  }
-
-		<!--<meta charset="UTF-8" /> -->
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-		<!--<title>Ritika Ratnu</title> -->
-		<!--<link rel="stylesheet" href="style.css" /> -->
-	</style>
+    <title>Ritika Ratnu</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#publications">Publications</a>
-    <a href="#software">Software</a>
-    <a href="#mentorship">Mentorship</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#awards">Awards</a>
-    <a href="#services">Services</a>
-  </nav>
+    <!-- Navigation bar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarItems"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <section id="about" class="about-section">
-			<img src="ritika.jpeg" alt="Photo of Your Name" class="profile-photo">
-			
-			<div class="about-info">
-			<h1>
-				Ritika Ratnu
-			</h1> 
+    <div class="collapse navbar-collapse" id="navbarItems">
+        <!--<ul class="navbar-nav ml-auto">-->
+        <ul class="navbar-nav mx-auto">
 
-			<p> 
-				PhD (Final Year)
-			</p>
+            <li class="nav-item">
+                <a class="nav-link "
+                href="index.html">About</a>
+            </li>
 
-			<p> 
-				KTH Royal Institute of Technology
-			</p>
-			
-			<p> 
-			Stockholm, Sweden
-			</p>
+            <li class="nav-item">
+                <a class="nav-link "
+                href="publication.html">Publications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="software.html">Software</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link "
+                href="students.html">Mentorship</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="teaching.html">Teaching</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link "
+                   href="awards.html">Awards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="service.html">Services</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-			<p> Email: ratnu[at]kth[.]se</p>
-			
-			<p>
-			<a href="cv.pdf" target="_blank">CV</a> | 
-			<a href="https://scholar.google.com/citations?user=k3-DHxAAAAAJ&hl=en" target="_blank">Google Scholar</a> | 
-			<a href="https://www.linkedin.com/in/ritika-ratnu-5ba91a171/" target="_blank">LinkedIn</a> 
-			</p>
-			</div>
-	</section>
+    <div class="container">
+        <div class="row justify-content-center" id="about">
+            <div class="col-md-4">
+                <img src="assets/images/photo.jpg" class="img-thumbnail mx-auto d-block portrait_img" 
+                    alt="Nellie Wu">
+            </div>
+            <div class="col-md-5 flex align-items-center about_info">
+                <div>
+                    <h1>Ritika Ratnu </h1>
+                    <h2>PhD (Final Year)</h2>
+                    <h2>KTH Royal Institute of Technology</h2>
+                    <h2>ratnu [at] kth [.] se</h2>
+                    <br>
 
-	<section id="about2" class="content-section"> 
-			<p> 
-			I am a final-year PhD candidate supervised by Professor Ahmed Hemani at the Department of Electronics and Embedded Systems at KTH Royal Institute of Technology in Stockholm, Sweden. My research is around developing post-layout accurate cost-models for hardware accelerator systems. Prior to my PhD, I was a Performance Validation Engineer at Intel. 
-			</p>
-	</section> 	
+                    <h2>Stockholm, Sweden</h2>
+                    <br>
+                    <h5>
+                        <!-- <a href="assets/cv/resume.pdf" target="_blank">[Resume]</a> -->
+                        <a href="assets/cv/cv.pdf" target="_blank">[CV]</a>
+                        <a href="https://scholar.google.com/citations?user=k3-DHxAAAAAJ&hl=en" target="_blank">[Google Scholar]</a>
+                        <a href="https://www.linkedin.com/in/ritika-ratnu-5ba91a171/" target="_blank">[Linkedin]</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
 
-	<section id="education" class="content-section"> 
-	<h2><span>Education</span></h2>
-  	<div class="education-item">
-    	<p class="education-header">
-      	<strong>KTH Royal Institute of Technology</strong>
-      	<span>2022–2027</span>
-    	</p>
-    	<p>Ph.D. in Electrical Engineering and Computer Science</p>
-  	</div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="about_text">
+                  <br><br>
+					I am a final-year PhD candidate supervised by Professor Ahmed Hemani at the Department of Electronics and Embedded Systems at KTH Royal Institute of Technology in Stockholm, Sweden. My research is around developing post-layout accurate cost-models for hardware accelerator systems. Prior to my PhD, I was a Performance Validation Engineer at Intel.
 
-  	<div class="education-item">
-    	<p class="education-header">
-      	<strong>Indian Institute of Science</strong>
-      	<span>2017–2019</span>
-    	</p>
-    	<p>M.Tech in Computational and Data Sciences</p>
-  	</div>
 
-  	<div class="education-item">
-    	<p class="education-header">
-      	<strong>Malaviya National Institute of Technology</strong>
-      	<span>2012–2016</span>
-    	</p>
-    	<p>B.Tech in Electronics and Communication Engineering</p>
-  	</div>
-	</section>
+                  <br><br>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row" id="experience">
+            <div class="col-md-12">
 
-	<section id="work-experience" class="content-section"> 
-	<h2><span>Work Experience</span></h2> 
+                <div class="section_header">Education</div>
+                
+                <div class="experience">
+                    <div class="exp_title_bold">
+                        KTH Royal Institute of Technology
+                    </div>
+                    <div class="exp_company">
+                        Ph.D. in Electrical Engineering and Computer Science
+                    </div>
+                    <div class="exp_date_long">
+                        Aug. 2022 - May 2027
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="exp_title_bold">
+                        Indian Institute of Science
+                    </div>
+                    <div class="exp_company">
+                        M.Tech. in Computational and Data Sciences 
+                    </div>
+                    <div class="exp_date_long">
+                        2017 - 2019
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="exp_title_bold">
+                        Malaviya National Institute Of Technology
+                    </div>
+                    <div class="exp_company">
+                        B.S. in Electronics and Communication Engineering
+                    </div>
+                    <div class="exp_date_long">
+                        Aug. 2012 - 2016
+                    </div>
+                </div>
 
-  	<div class="education-item">
-    	<p class="education-header">
-      	<strong>Silicon Architecture Engineer</strong>
-      	<span>2021–2022</span>
-    	</p>
-    	<p>Intel</p>
-  	</div>
+                <div class="section_header">Work Experience</div>
+                
+                <div class="experience">
+                    <div class="exp_title_bold">
+                        Silicon Architecture Engineer
+                    </div>
+                    <div class="exp_company">
+                        Intel
+                    </div>
+                    <div class="exp_date_long">
+                        2021 - 2022
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="exp_title_bold">
+                        Core Validation Engineer
+                    </div>
+                    <div class="exp_company">
+                        Intel
+                    </div>
+                    <div class="exp_date_long">
+                        2019 - 2021
+                    </div>
+                </div>
 
-  	<div class="education-item">
-    	<p class="education-header">
-      	<strong>Core Validation Engineer</strong>
-      	<span>2019–2021</span>
-    	</p>
-    	<p>Intel</p>
-  	</div>
-	</section>
-  <script src="script.js"></script>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/style.js"></script>
 </body>
+
+</html>
