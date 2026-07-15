@@ -21,7 +21,7 @@ $(function () {
 
     $("#news .exp_title").prepend('<i class="far fa-newspaper"></i>&nbsp&nbsp');
     
-    $("#students .student_name").prepend('<i class="far fa-user-graduate"></i>&nbsp&nbsp');
+    $("#students .student_name").prepend('<i class="fas fa-user-graduate"></i>&nbsp&nbsp');
 
     // $(".service_content").html(function () {
     //     re = /.* of ([^\n\r]*)/g;
