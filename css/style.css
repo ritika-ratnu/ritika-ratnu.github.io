@@ -1,8 +1,7 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
-    padding-top: 0px;
-    /*padding-top: 62px;*/
+    padding-top: 0;
 }
 
 ul {
@@ -17,6 +16,8 @@ a:hover {
     color: #f87979;
 }
 
+/* Navigation */
+
 .navbar .navbar-collapse {
     text-align: center;
 }
@@ -26,19 +27,23 @@ a:hover {
     color: #e03333 !important;
 }
 
-.navbar-nav li:hover>ul.dropdown-menu {
-    margin-top: -8px;
+.navbar-nav li:hover > ul.dropdown-menu {
     display: block;
+    margin-top: -8px;
 }
 
 .dropdown-menu .dropdown-item:active {
     background: #e03333 !important;
 }
 
+/* General layout */
+
 .container {
     max-width: 996px;
     margin-bottom: 100px;
 }
+
+/* About */
 
 #about {
     padding-top: 20px;
@@ -48,10 +53,7 @@ a:hover {
     font-size: 32px;
 }
 
-#about h2 {
-    font-size: 22px;
-}
-
+#about h2,
 #about h5 {
     font-size: 22px;
 }
@@ -61,112 +63,109 @@ a:hover {
 }
 
 .about_text {
-    font-size: 18px;
     margin-top: 30px;
+    font-size: 18px;
     text-align: justify;
 }
+
+/* Section headings */
 
 .section_header {
     margin-top: 20px;
     margin-bottom: 10px;
-    text-align: center;
     font-size: 24px;
+    text-align: center;
 }
 
 .section_header hr {
     max-width: 100px;
     height: 5px;
-    border-top: 3px solid #e03333;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-top: 3px solid #e03333;
 }
 
 .subsec_header {
     margin-top: 30px;
-    text-align: center;
     font-size: 20px;
+    text-align: center;
 }
+
+/* Publications */
 
 .publication {
     margin-bottom: 30px;
 }
 
 .pub_title {
+    margin-bottom: 3px;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 3px;
 }
 
 .pub_award {
+    color: #e03333;
     font-size: 18px;
     font-weight: bold;
-    color: #e03333;
 }
-
 
 .pub_authors {
     font-size: 18px;
 }
 
 .pub_conference {
+    margin-right: 80px;
     font-size: 18px;
     font-style: italic;
-    margin-right: 80px;
 }
 
 .pub_sophia {
-    font-size: 18px;
-    /* font-weight: bold; */
-    /* text-decoration: underline; */
+    display: inline;
     padding-bottom: 1px;
     border-bottom: 1px solid;
-    display: inline;
+    font-size: 18px;
     line-height: 4px;
 }
 
 .teach_pub_links {
+    margin-top: -26px;
     font-size: 18px;
     text-align: right;
-    margin-top: -26px;
 }
 
 .pub_links {
+    margin-top: -32px;
     font-size: 18px;
     text-align: right;
-    margin-top: -32px;
 }
+
+/* Experience */
 
 .experience {
     margin-bottom: 5px;
 }
 
-.experience>img:first-of-type {
+.experience > img:first-of-type {
     width: 100px;
 }
 
 .exp_title {
-    font-size: 18px;
     padding-right: 80px;
+    font-size: 18px;
 }
 
 .exp_title_bold {
+    padding-right: 80px;
     font-size: 18px;
     font-weight: bold;
-    padding-right: 80px;
 }
 
 .exp_company {
-    font-size: 18px;
     margin-right: 150px;
-}
-
-.exp_date {
-    margin-top: -30px;
     font-size: 18px;
-    font-style: italic;
-    text-align: right;
 }
 
+.exp_date,
 .exp_date_long {
     margin-top: -30px;
     font-size: 18px;
@@ -174,6 +173,7 @@ a:hover {
     text-align: right;
 }
 
+/* Software */
 
 .software {
     margin-bottom: 10px;
@@ -184,38 +184,77 @@ a:hover {
 }
 
 .software_link {
-    font-size: 18px;
     margin-top: -36px;
+    font-size: 18px;
     text-align: right;
 }
 
-.student {
-    margin-bottom: 20px;
-    text-align: center;
+/* Master's thesis students */
+
+.students {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        "name company date"
+        "title title title";
+    column-gap: 0.35rem;
+    align-items: baseline;
+    margin-bottom: 25px;
 }
 
-.student_name {
+.students .student_name {
+    grid-area: name;
     font-size: 18px;
-    font-weight: bold;
-    padding-right: 0px;
+    font-weight: 600;
+}
+
+.students .thesis_company {
+    grid-area: company;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.students .thesis_company::before {
+    content: "(";
+}
+
+.students .thesis_company::after {
+    content: ")";
+}
+
+.students .exp_date {
+    grid-area: date;
+    margin-top: 0;
+    font-size: 18px;
+    font-style: italic;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.students .thesis_title {
+    grid-area: title;
+    max-width: 850px;
+    margin-top: 3px;
+    line-height: 1.5;
 }
 
 .student_link {
-    font-size: 18px;
     margin-top: -26px;
+    font-size: 18px;
     text-align: right;
 }
+
+/* News */
 
 #news_more h5 {
     text-align: center;
 }
 
+/* Phones */
+
 @media (max-width: 416px) {
-
-    .dropdown-item {
-        text-align: center;
-    }
-
+    .dropdown-item,
     .about_info {
         text-align: center;
     }
@@ -229,51 +268,44 @@ a:hover {
     }
 
     .experience {
+        margin-right: 5px;
         margin-bottom: 5px;
         margin-left: 5px;
-        margin-right: 5px;
     }
 
     .exp_company {
+        margin-right: 0;
         font-size: 20px;
-        margin-right: 0px;
     }
 
-    .exp_title {
+    .exp_title,
+    .exp_title_bold {
+        padding-right: 0;
         font-size: 18px;
-        padding-right: 0px;
     }
 
     .exp_title_bold {
-        font-size: 18px;
         font-weight: bold;
-        padding-right: 0px;
     }
 
-    .exp_date {
-        margin-top: 0px;
-        font-size: 18px;
-        font-style: italic;
-        text-align: left;
-    }
-
+    .exp_date,
     .exp_date_long {
-        margin-top: 0px;
+        margin-top: 0;
         font-size: 18px;
         font-style: italic;
         text-align: left;
     }
 
     .publication {
+        margin-right: 5px;
         margin-bottom: 30px;
         margin-left: 5px;
-        margin-right: 5px;
     }
 
     .pub_title {
+        margin-bottom: 3px;
         font-size: 18px;
         font-weight: bold;
-        margin-bottom: 3px;
         text-align: center;
     }
 
@@ -283,43 +315,60 @@ a:hover {
     }
 
     .pub_conference {
+        margin-right: 0;
         font-size: 16px;
         font-style: italic;
-        margin-right: 0px;
         text-align: center;
     }
 
     .pub_sophia {
-        font-size: 18px;
         padding-bottom: 1px;
         border-bottom: 1px solid;
+        font-size: 18px;
         line-height: 4px;
     }
 
     .pub_links {
+        margin-top: 0;
         font-size: 18px;
         text-align: center;
-        margin-top: 0px;
     }
 
     .software_name {
+        margin-right: 0;
         font-size: 20px;
-        margin-right: 0px;
     }
 
     .software_link {
+        margin-top: 0;
         font-size: 18px;
-        margin-top: 0px;
         text-align: right;
+    }
+
+    .students {
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "name company"
+            "date date"
+            "title title";
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .students .exp_date {
+        margin-top: 2px;
+        text-align: left;
+    }
+
+    .students .thesis_title {
+        margin-top: 5px;
     }
 }
 
-@media (max-width:768px) and (min-width:417px) {
+/* Tablets */
 
-    .dropdown-item {
-        text-align: center;
-    }
-
+@media (max-width: 768px) and (min-width: 417px) {
+    .dropdown-item,
     .about_info {
         text-align: center;
     }
@@ -333,8 +382,8 @@ a:hover {
     }
 
     .exp_title {
+        padding-right: 0;
         font-size: 18px;
-        padding-right: 0px;
     }
 
     .exp_date_long {
@@ -345,15 +394,28 @@ a:hover {
     }
 
     .pub_links {
+        margin-top: 0;
         font-size: 18px;
         text-align: center;
-        margin-top: 0px;
+    }
+
+    .students {
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "name company"
+            "date date"
+            "title title";
+    }
+
+    .students .exp_date {
+        margin-top: 2px;
+        text-align: left;
     }
 }
 
+/* Small desktops */
 
-@media (max-width:992px) and (min-width:769px) {
-
+@media (max-width: 992px) and (min-width: 769px) {
     .dropdown-item {
         text-align: center;
     }
@@ -365,18 +427,4 @@ a:hover {
     #about h2 {
         font-size: 22px;
     }
-}
-.thesis_company {
-    margin-top: 4px;
-    font-weight: 600;
-}
-
-.thesis_title {
-    margin-top: 3px;
-    max-width: 850px;
-    line-height: 1.5;
-}
-
-.students {
-    margin-bottom: 25px;
 }
