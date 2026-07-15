@@ -60,6 +60,13 @@ $(function () {
     $("a.pub_poster").attr('data-placement', 'bottom')
     $("a.pub_poster").attr('title', 'Poster')
 
+    $("a.pub_github").prepend('<i class="fab fa-github"></i>');
+    $("a.pub_github").attr("target", "_blank");
+    $("a.pub_github").attr("rel", "noopener noreferrer");
+    $("a.pub_github").attr("data-toggle", "tooltip");
+    $("a.pub_github").attr("data-placement", "bottom");
+    $("a.pub_github").attr("title", "GitHub");
+
     $("a.pub_bib").prepend('<i class="fas fa-book"></i>');
     $("a.pub_bib").attr('target', '_blank')
     $("a.pub_bib").attr('data-toggle', 'tooltip')
