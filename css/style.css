@@ -366,4 +366,17 @@ a:hover {
         font-size: 22px;
     }
 }
+.thesis_company {
+    margin-top: 4px;
+    font-weight: 600;
+}
 
+.thesis_title {
+    margin-top: 3px;
+    max-width: 850px;
+    line-height: 1.5;
+}
+
+.students {
+    margin-bottom: 25px;
+}
